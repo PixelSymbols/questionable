@@ -24,7 +24,7 @@ pip install questionable
 ### how to use:
 
 ```py
-import questionable as qq
+from questionable import qq
 
 def your_func(your_args=...):
 	# your code
@@ -56,7 +56,7 @@ class NotYoutubeLink(Exception):
 ```
 you will be able todo:
 ```py
-import questionable as qq
+from questionable import qq
 
 class NotYoutubeLink(Exception):
 	def __str__(self):

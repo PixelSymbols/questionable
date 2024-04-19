@@ -13,3 +13,5 @@ class Questionable:
 		return self._value
 	def __call__(self) -> Any:
 		return self.value()
+def qq(most:any,least:any):
+	return Questionable(most,least)()

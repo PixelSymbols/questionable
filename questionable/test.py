@@ -1,4 +1,4 @@
-from main import Questionable as qq
+from main import qq
 import unittest
 
 class Test(unittest.TestCase):
@@ -32,8 +32,8 @@ class Test(unittest.TestCase):
 
 		self.assertEqual(qq((1,2,3,4),()),(1,2,3,4))
 		self.assertEqual(qq((),(1,2,3,4)),(1,2,3,4))
-		self.assertEqual(qq((1,2,3,4),(5,6,7,8)),(1,2,3,4)
-		self.assertEqual(qq((),())),None)
+		self.assertEqual(qq((1,2,3,4),(5,6,7,8)),(1,2,3,4))
+		self.assertEqual(qq((),()),None)
 
 		self.assertEqual(qq({1,2,3,4},{}),{1,2,3,4})
 		self.assertEqual(qq({},{1,2,3,4}),{1,2,3,4})
